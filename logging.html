@@ -1,0 +1,29 @@
+Actually here are not only dev tools tricks, but it's still cool to check it out. To see good stuff open console window.
+<script>
+    console.log('this is something everyone knows');
+    console.warn('but warnings are less used');
+    console.error('as well as erorrs');
+    console.info('info also is not very popular');
+
+    console.assert([] == []);
+    console.assert(1 != 1, "Asserts - that's something I'm pretty sure almost no one knows exist in console");
+
+    console.group('testGroup');
+    console.log('but grouping logs');
+    console.log('sounds very');
+    console.log('very interesting');
+    console.log('and for sure I will use them');
+    console.group('sub-group');
+    console.log('we even have sub-groups - cool!');
+    console.groupEnd();
+    console.log('end of test group message');
+    console.groupEnd();
+
+    console.log('This is object %o', window);
+    console.log('This is number %i', 666);
+
+    //This thing is Chrome && FF specific
+    console.log('%c Oh satan! ', 'background: #000000; color: red');
+
+
+</script>
